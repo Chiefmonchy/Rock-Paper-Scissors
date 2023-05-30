@@ -5,14 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Rock Paper Scissors</title>
 </head>
 
 <body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="labels">
+        <div>7</div>
+    </div>
+    <div class="buttons">
+
+        <button class="rock-button">Rock</button>
+        <button class="paper-button">Paper</button>
+        <button class="scissors-button">Scissors</button>
+    </div>
     <script>
         function getComputerChoice() {
             const choices = ['Rock', 'Paper', 'Scissors'];
-            const randomChoice = Math.floor(Math.random() * 3);
+            const randomChoice = Math.floor(Math.random() * choices.length);
             return choices[randomChoice]
         }
 

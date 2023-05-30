@@ -1,0 +1,30 @@
+body {
+
+
+    height: 100vh;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.buttons {
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-around;
+    /*align-items: center;*/
+    position: relative;
+}
+
+
+
+.rock-button {
+    padding: 10px;
+}
+
+.rock-button:hover {
+    padding: 20px;
+
+}
