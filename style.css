@@ -1,8 +1,8 @@
 body {
 
-
     height: 100vh;
     padding: 0;
+
 }
 
 h1 {
@@ -10,21 +10,42 @@ h1 {
     padding: 20px;
 }
 
-.buttons {
-    margin-top: 300px;
+.scores {
     display: flex;
-    justify-content: space-around;
-    /*align-items: center;*/
-    position: relative;
 }
 
-
-
-.rock-button {
-    padding: 10px;
+.player-score {
+    height: 50px;
+    width: 100px;
 }
 
-.rock-button:hover {
-    padding: 20px;
+.comp-score {
+    height: 50px;
+    width: 100px;
+    margin-left: auto;
 
+}
+
+.buttons {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+div img {
+    max-height: 300px;
+    min-height: 200px;
+    transition: 100ms;
+}
+
+img:hover {
+    transform: scale(1.02);
 }
